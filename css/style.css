@@ -1,0 +1,52 @@
+.container {
+  width: 1200px;
+  margin: auto;
+  margin-top: 45px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__input {
+  width: 690px;
+  height: 40px;
+  padding-left: 35px;
+  border: 1px solid #D9D9D9;
+  border-radius: 2px;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #BFBFBF;
+  background: url(../img/home.svg) no-repeat left 11px center;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.header__button{
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 2px;
+}
+.button-primary {
+  margin-right: 10px;
+  color: #fff;
+  background: url(../img/signIn.svg) left 18px center no-repeat #1890FF;
+  padding-left: 36px;
+}
+
+.button-white {
+  background: url(../img/shoppingCard.svg) left 17px center no-repeat;
+  padding-left: 36px;
+  border: 1px solid #D9D9D9;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+}
