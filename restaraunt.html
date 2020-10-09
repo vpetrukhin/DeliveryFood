@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalized.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,13 +16,13 @@
   <div class="container">
     <header class="header">
       <!-- Logo -->
-      <a href="index.html" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+      <a href="index.html" class="header__logo wow bounceInUp"><img src="img/logo.svg" alt="logo"></a>
       <!-- Поле ввода адреса -->
       <input type="text" class="input header__input" placeholder="Адрес доставки">
       <!-- buttons -->
       <div class="header__buttons">
-        <div class="header__button button-primary">Войти</div>
-        <div class="header__button button-white">Корзина</div>
+        <div class="header__button button-primary" >Войти</div>
+        <button class="header__button button-white" id="#shoppingcard">Корзина</button>
       </div>
     </header>
   </div>
@@ -35,7 +36,7 @@
           <div class="category">Пицца и суши</div>
         </div>
         <div class="restaraunts__cards">
-          <div class="restaraunts__card">
+          <div class="restaraunts__card wow bounceInUp data-wow-delay = "0.2s">
             <img src="img/restaraunts/restaraunts_card_image1.png" alt="image" class="restaraunts__card_image">
             <div class="restaraunt__card_description">
               <h3 class="restaraunt__card_heading-title">Ролл угорь стандарт</h3>
@@ -46,7 +47,7 @@
               <div class="restaraunt__card_price">250 ₽</div>
             </div>
           </div>
-          <div class="restaraunts__card">
+          <div class="restaraunts__card wow bounceInUp" data-wow-delay = "0.4s">
             <img src="img/restaraunts/restaraunts_card_image2.png" alt="image" class="restaraunts__card_image">
             <div class="restaraunt__card_description">
               <h3 class="restaraunt__card_heading-title">Калифорния лосось стандарт</h3>
@@ -57,7 +58,7 @@
               <div class="restaraunt__card_price">250 ₽</div>
             </div>
           </div>
-          <div class="restaraunts__card">
+          <div class="restaraunts__card wow bounceInUp" data-wow-delay = "0.6s">
             <img src="img/restaraunts/restaraunts_card_image3.png" alt="image" class="restaraunts__card_image">
             <div class="restaraunt__card_description">
               <h3 class="restaraunt__card_heading-title">Окинава стандарт</h3>
@@ -69,7 +70,7 @@
               <div class="restaraunt__card_price">250 ₽</div>
             </div>
           </div>
-           <div class="restaraunts__card">
+           <div class="restaraunts__card wow bounceInUp" data-wow-delay = "0.2s">
              <img src="img/restaraunts/restaraunts_card_image4.png" alt="image" class="restaraunts__card_image">
              <div class="restaraunt__card_description">
                <h3 class="restaraunt__card_heading-title">Цезарь маки хl</h3>
@@ -81,7 +82,7 @@
                <div class="restaraunt__card_price">250 ₽</div>
              </div>
            </div>
-          <div class="restaraunts__card">
+          <div class="restaraunts__card wow bounceInUp" data-wow-delay = "0.4s">
             <img src="img/restaraunts/restaraunts_card_image5.png" alt="image" class="restaraunts__card_image">
             <div class="restaraunt__card_description">
               <h3 class="restaraunt__card_heading-title">Ясай маки стандарт 185 г</h3>
@@ -93,7 +94,7 @@
               <div class="restaraunt__card_price">250 ₽</div>
             </div>
           </div>
-          <div class="restaraunts__card">
+          <div class="restaraunts__card wow bounceInUp" data-wow-delay = "0.6s">
             <img src="img/restaraunts/restaraunts_card_image6.png" alt="image" class="restaraunts__card_image">
             <div class="restaraunt__card_description">
               <h3 class="restaraunt__card_heading-title">Ролл с креветкой стандарт</h3>
@@ -125,6 +126,70 @@
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <div class="modal__window">
+      <div class="modal__header">
+        <h3 class="modal__header_title">Корзина</h3>
+        <button class="modal__header_close">&times;</button>
+      </div>
+      <div class="modal__main">
+        <div class="modal__main_row">
+          <div class="modal__main_food">Ролл угорь стандарт</div>
+          <div class="modal__main_price">250 ₽</div>
+          <div class="modal__main_counter">
+            <button class="modal__main_counter-button">-</button>
+            <div class="modal__main_counter-count">1</div>
+            <button class="modal__main_counter-button">+</button>
+          </div>
+        </div>
+        <div class="modal__main_row">
+          <div class="modal__main_food">Ролл угорь стандарт</div>
+          <div class="modal__main_price">250 ₽</div>
+          <div class="modal__main_counter">
+            <button class="modal__main_counter-button">-</button>
+            <div class="modal__main_counter-count">1</div>
+            <button class="modal__main_counter-button">+</button>
+          </div>
+        </div>
+        <div class="modal__main_row">
+          <div class="modal__main_food">Ролл угорь стандарт</div>
+          <div class="modal__main_price">250 ₽</div>
+          <div class="modal__main_counter">
+            <button class="modal__main_counter-button">-</button>
+            <div class="modal__main_counter-count">1</div>
+            <button class="modal__main_counter-button">+</button>
+          </div>
+        </div>
+        <div class="modal__main_row">
+          <div class="modal__main_food">Ролл угорь стандарт</div>
+          <div class="modal__main_price">250 ₽</div>
+          <div class="modal__main_counter">
+            <button class="modal__main_counter-button">-</button>
+            <div class="modal__main_counter-count">1</div>
+            <button class="modal__main_counter-button">+</button>
+          </div>
+        </div>
+        <div class="modal__main_row">
+          <div class="modal__main_food">Ролл угорь стандарт</div>
+          <div class="modal__main_price">250 ₽</div>
+          <div class="modal__main_counter">
+            <button class="modal__main_counter-button">-</button>
+            <div class="modal__main_counter-count">1</div>
+            <button class="modal__main_counter-button">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal__footer">
+        <div class="modal__footer_price-tag">1250 ₽</div>
+        <div class="modal__footer_buttons">
+          <button class="modal__footer_button primary">Оформить заказ</button>
+          <button class="modal__footer_button white">Отмена</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/WOW.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
