@@ -283,3 +283,64 @@ body {
     font-size: 14px;
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .header__input {
+    order: 3;
+    flex: 1;
+    margin: auto;
+    margin-top: 15px;
+  }
+
+  .header__buttons {
+    order: 2;
+  }
+
+  .header__logo {
+    order: 1;
+  }
+
+  .promo {
+    background-image: none;
+    padding: 30px 20px;
+    margin-bottom: 15px;
+  }
+
+  .promo__text {
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .restaraunts__heading {
+    flex-wrap: wrap;
+  }
+
+  .restaraunts__title {
+    flex-basis: 100%;
+    font-size: 25px;
+  }
+
+  .restaraunts__input {
+    flex: 1;
+  }
+
+  .restaraunts__card {
+    flex-basis: 100%;
+  }
+
+  .footer__logo {
+    order: 1;
+  }
+
+  .footer__nav {
+    order: 3;
+  }
+
+  .footer__sociallink {
+    order: 2;
+  }
+}
